@@ -385,10 +385,10 @@ elif tipo_preventivo == "SUNGROW MONOFASE":
         sungrow_n_formattato = str(n_sungrow) if n_sungrow is not None else ""
         
         prezzo_tigo_formattato = f"{prezzo_tigo:,.2f}".replace(',', 'X').replace('.', ',').replace('X', '.') if prezzo_tigo is not None else ""
-        prezzo_tigo_iva = f"{prezzo_tigo * 1.10:,.2f}".replace(',', 'X').replace('.', ',').replace('X', '.') if prezzo_tigo is not None else "" # Calcola automaticamente l'IVA al 10%
+        prezzo_tigo_iva = f"{prezzo_tigo_iva_input:,.2f}".replace(',', 'X').replace('.', ',').replace('X', '.') if prezzo_tigo is not None else "" # Calcola automaticamente l'IVA al 10%
         
         prezzo_sungrow_formattato = f"{prezzo_sungrow:,.2f}".replace(',', 'X').replace('.', ',').replace('X', '.') if prezzo_sungrow is not None else ""
-        prezzo_sungrow_iva = f"{prezzo_sungrow * 1.10:,.2f}".replace(',', 'X').replace('.', ',').replace('X', '.') if prezzo_sungrow is not None else "" # Calcola automaticamente l'IVA al 10%
+        prezzo_sungrow_iva = f"{prezzo_sungrow_iva_input:,.2f}".replace(',', 'X').replace('.', ',').replace('X', '.') if prezzo_sungrow is not None else "" # Calcola automaticamente l'IVA al 10%
 
         # PREZZO E TOTALE (Trucco del numero vs Euro)
         prezzo_solo_numero = f"{prezzo_base:,.2f}".replace(',', 'X').replace('.', ',').replace('X', '.') if prezzo_base is not None else ""
