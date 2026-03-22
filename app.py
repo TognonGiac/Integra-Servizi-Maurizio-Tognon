@@ -192,7 +192,7 @@ elif tipo_preventivo == "TESLA":
         kwh_formattato = f"{capacita_accumulo:.2f}".replace('.', ',') if capacita_accumulo is not None else ""
         prezzo_formattato = f"{prezzo_base:,.2f}".replace(',', 'X').replace('.', ',').replace('X', '.') + " €" if prezzo_base is not None else ""
         totale_formattato = f"{totale_finale:,.2f}".replace(',', 'X').replace('.', ',').replace('X', '.') if totale_finale is not None else ""
-        totale_simbolo_formattato = f"{totale_finale:,.2f}".replace(',', 'X').replace('.', ',').replace('X', '.') + " €" if totale_finale is not None else ""
+        totale_simbolo_formattato = f"{totale_finale:,.2f}".replace(',', 'X').replace('.', ',').replace('X', '.') if totale_finale is not None else ""
         moduli_formattato = str(moduli) if moduli is not None else ""
         powerwall_formattato = str(powerwall) if powerwall is not None else ""
             
