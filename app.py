@@ -190,9 +190,8 @@ elif tipo_preventivo == "TESLA":
         # Formattiamo i numeri in modo sicuro
         potenza_formattata = f"{potenza_nominale:.2f}".replace('.', ',') if potenza_nominale is not None else ""
         kwh_formattato = f"{capacita_accumulo:.2f}".replace('.', ',') if capacita_accumulo is not None else ""
-        prezzo_formattato = f"{prezzo_base:,.2f}".replace(',', 'X').replace('.', ',').replace('X', '.') + " €" if prezzo_base is not None else ""
+        prezzo_formattato = f"{prezzo_base:,.2f}".replace(',', 'X').replace('.', ',').replace('X', '.') if prezzo_base is not None else ""
         totale_formattato = f"{totale_finale:,.2f}".replace(',', 'X').replace('.', ',').replace('X', '.') if totale_finale is not None else ""
-        totale_simbolo_formattato = f"{totale_finale:,.2f}".replace(',', 'X').replace('.', ',').replace('X', '.') if totale_finale is not None else ""
         moduli_formattato = str(moduli) if moduli is not None else ""
         powerwall_formattato = str(powerwall) if powerwall is not None else ""
             
@@ -214,7 +213,7 @@ elif tipo_preventivo == "TESLA":
                 
             "prezzo": prezzo_formattato,
             "piu' iva": totale_formattato,
-            "chiavi in mano": totale_simbolo_formattato,
+            "chiavi in mano": totale_formattato,
             "note": note_aggiuntive
         }
                 
