@@ -31,7 +31,7 @@ coordinate_TESLA = {
     "indirizzo_installazione":(70, 539),
     
     "potenza_nominale": (300, 408),
-    "kwh_totali": (260, 380),   # Vicino a "DA ... KHW"
+    "kwh_totali": (260, 384),   # Vicino a "DA ... KHW"
     
     # Pagina 2
     "moduli": (1, 83, 760),
