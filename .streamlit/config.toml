@@ -1,0 +1,7 @@
+[server]
+enableCORS = false
+enableXsrfProtection = false
+endpoint_type = "websocket"
+
+[browser]
+gatherUsageStats = false
